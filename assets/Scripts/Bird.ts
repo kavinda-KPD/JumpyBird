@@ -24,8 +24,6 @@ export class Bird extends Component {
   onLoad() {
     this.resetBird();
     this.birdAnimation = this.getComponent(Animation);
-
-    this.node.on(Node.EventType.TOUCH_START, this.fly, this);
   }
 
   resetBird() {
